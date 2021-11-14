@@ -1,0 +1,37 @@
+.card {
+    width: 250px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 15px;
+    margin: 15px 10px;
+    text-align: center;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body {
+    background-image: url(./photo5368555579670377829.jpg);
+}
+.params {
+    display: flex;
+    justify-content: space-around;
+}
+.hp {
+   color: #f00; 
+}
+.attack {
+    color: #1b9c1b;
+}
+.defence {
+    color: #15158d;
+}
+
+.orderForm {
+    background-color: #fff;
+    border-radius: 30px;
+    border: 2px solid;
+    text-align: center;
+    padding: 10px 20px 30px 20px;
+}

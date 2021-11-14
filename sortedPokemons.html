@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="orderForm">
+        <p><b>Sort by:</b></p>
+        <label for="id">id: </label>
+        <input type="radio" name="pokeParam" id="id" value="id">
+        <label for="name">name: </label>
+        <input type="radio" name="pokeParam" id="name" value="name">
+        <label for="attack">attack: </label>
+        <input type="radio" name="pokeParam" id="attack" value="attack">
+        <label for="defense">defense: </label>
+        <input type="radio" name="pokeParam" id="defense" value="defense">
+
+        <p><b>Order:</b></p>
+        <label for="asc">from smallest to biggest</label>
+        <input type="radio" id="asc" name="order" value="1">
+        <label for="desc">from biggest to smallest</label>
+        <input type="radio" id="desc" name="order" value="-1">
+        
+        <p>Filters</p>
+        <label for="pokemonName">name:</label>
+        <input type="text" name="pokemonNameFilter" id="pokemonName">
+        <br>
+        <label for="hpFrom">hp from:</label>
+        <input type="range" min="10" max="250" name="hpFromFilter" id="hpFrom">
+        <label for="hpTo">hp to:</label>
+        <input type="range" min="10" max="250" name="hpToFilter" id="hpTo">
+        <br>
+        <br>
+        <label for="attackFrom">attack from:</label>
+        <input type="range" min="5" max="130" name="attackFromFilter" id="attackFrom">
+        <label for="attackTo">attack to:</label>
+        <input type="range" min="5" max="130" name="attackToFilter" id="attackTo">
+        <br>
+        <br>
+        <label for="defenseFrom">defense from:</label>
+        <input type="range" min="5" max="180" name="defenseFromFilter" id="defenseFrom">
+        <label for="defenseTo">defense to:</label>
+        <input type="range" min="5" max="180" name="defenseToFilter" id="defenseTo">
+        <br>
+
+    </form>
+    <main id="container"></main>
+    
+    <script src="./async.js"></script>
+</body>
+</html>
